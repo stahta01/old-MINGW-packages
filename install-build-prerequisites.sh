@@ -1,1 +1,1 @@
-pacman -S --needed diffutils make patch tar texinfo tree
+pacman -S --needed diffutils git make patch tar texinfo tree
