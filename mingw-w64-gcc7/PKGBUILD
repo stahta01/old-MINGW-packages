@@ -30,7 +30,7 @@ pkgname=("${MINGW_PACKAGE_PREFIX}-${_realname}${_gccnumber}"
         )
 pkgver=7.5.0
 _sourcedir=${_realname}-${pkgver}
-pkgrel=1
+pkgrel=2
 pkgdesc="GCC for the MinGW-w64"
 arch=('any')
 mingw_arch=('mingw32' 'mingw64')
@@ -58,11 +58,11 @@ noextract=("${_sourcedir}.tar.xz"
            "gmp-$GMP_VERSION.tar.xz"
            "mpc-$MPC_VERSION.tar.gz"
            "isl-$ISL_VERSION.tar.bz2")
-source=("https://ftp.gnu.org/gnu/gcc/${_realname}-${pkgver}/${_realname}-${pkgver}.tar.xz"{,.sig}
+source=("https://ftp.gnu.org/gnu/gcc/${_realname}-${pkgver}/${_realname}-${pkgver}.tar.xz"
         "https://ftp.gnu.org/gnu/mpfr/mpfr-$MPFR_VERSION.tar.xz"
         "https://ftp.gnu.org/gnu/gmp/gmp-$GMP_VERSION.tar.xz"
         "https://ftp.gnu.org/gnu/mpc/mpc-$MPC_VERSION.tar.gz"
-        "http://isl.gforge.inria.fr/isl-$ISL_VERSION.tar.bz2"
+        "https://gcc.gnu.org/pub/gcc/infrastructure/isl-$ISL_VERSION.tar.bz2"
         "gdbinit"
         "0002-Relocate-libintl.patch"
         "0003-Windows-Follow-Posix-dir-exists-semantics-more-close.patch"
@@ -77,13 +77,12 @@ source=("https://ftp.gnu.org/gnu/gcc/${_realname}-${pkgver}/${_realname}-${pkgve
         "0014-gcc-6-branch-clone_function_name_1-Retain-any-stdcall-suffix.patch"
         "0016-disable-weak-refs-in-libstdc++.patch"
         "0017-diagnostic-color.patch"
-        0020-libgomp-Don-t-hard-code-MS-printf-attributes.patch
+        '0020-libgomp-Don-t-hard-code-MS-printf-attributes.patch'
         "0100-gcc-4.8-libstdc++export.patch"
         "0110-gcc-4.7-stdthreads.patch"
         "0130-libstdc++-in-out.patch"
         "0140-gcc-7-Enable-std-experimental-filesystem.patch")
 sha256sums=('b81946e7f01f90528a1f7352ab08cc602b9ccc05d4e44da4bd501c5a189ee661'
-            'SKIP'
             '1d3be708604eae0e42d578ba93b390c2a145f17743a744d8f3f8c2ad5855a38a'
             '87b565e89a9a684fe4ebeeddb8399dce2599f9c9049854ca8c0dfbdea0e21912'
             '6985c538143c1208dcb1ac42cedad6ff52e267b47e5f970183a3e75125b43c2e'
@@ -237,7 +236,7 @@ build() {
       local _conf="--disable-sjlj-exceptions --with-dwarf2"
       LDFLAGS+=" -Wl,--large-address-aware"
       local _arch=i686
-      export CFLAGS+=" -D_USE_32BIT_TIME_T"
+#      export CFLAGS+=" -D_USE_32BIT_TIME_T"
     ;;
 
     x86_64)
@@ -315,7 +314,8 @@ build() {
     sed -i 's,^STRIP_FOR_TARGET=.*$,STRIP_FOR_TARGET=true,g' Makefile
   fi
 
-  make V=1 all
+  # Intermittant make error; added "||" and second make to see if it works around build error.
+  make V=1 all || make V=1 all
 
   rm -rf ${srcdir}${MINGW_PREFIX}
 
