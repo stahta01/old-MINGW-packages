@@ -1,0 +1,9 @@
+.
+./mingw32
+./mingw32/i686-w64-mingw32
+./mingw32/i686-w64-mingw32/include
+./mingw32/i686-w64-mingw32/include/pthread_signal.h
+./mingw32/i686-w64-mingw32/include/pthread_time.h
+./mingw32/i686-w64-mingw32/include/pthread_unistd.h
+
+3 directories, 3 files
