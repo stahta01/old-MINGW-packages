@@ -3,11 +3,11 @@
 
 _realname=crt
 _sourcedir=mingw-w64-git
-pkgbase=mingw-w64-${_realname}6-git
+pkgbase=mingw-w64-${_realname}6
 pkgname=("${MINGW_PACKAGE_PREFIX}-${_realname}-git" "${MINGW_PACKAGE_PREFIX}-headers-git" "${MINGW_PACKAGE_PREFIX}-pthread-stub-headers-git")
 replaces=("${MINGW_PACKAGE_PREFIX}-${_realname}-svn")
 pkgver=6.0.0.5241.e174bf62d
-pkgrel=1
+pkgrel=2
 _commit='e174bf62d33d26b9fee56ef45e8d8566d01a5af7'
 pkgdesc='MinGW-w64 CRT for Windows'
 arch=('any')
