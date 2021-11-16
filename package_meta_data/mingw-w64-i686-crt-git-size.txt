@@ -212,8 +212,8 @@
 [      76248]  ./mingw32/i686-w64-mingw32/lib/libmfuuid.a
 [       8920]  ./mingw32/i686-w64-mingw32/lib/libmgmtapi.a
 [    2579786]  ./mingw32/i686-w64-mingw32/lib/libmincore.a
-[      40458]  ./mingw32/i686-w64-mingw32/lib/libmingw32.a
-[     642754]  ./mingw32/i686-w64-mingw32/lib/libmingwex.a
+[      40454]  ./mingw32/i686-w64-mingw32/lib/libmingw32.a
+[     642750]  ./mingw32/i686-w64-mingw32/lib/libmingwex.a
 [        730]  ./mingw32/i686-w64-mingw32/lib/libmingwthrd.a
 [        712]  ./mingw32/i686-w64-mingw32/lib/libmoldname.a
 [      55284]  ./mingw32/i686-w64-mingw32/lib/libmpr.a
