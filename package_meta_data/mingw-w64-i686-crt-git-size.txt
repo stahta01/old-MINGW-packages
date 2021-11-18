@@ -176,7 +176,7 @@
 [      40170]  ./mingw32/i686-w64-mingw32/lib/libglu32.a
 [      87116]  ./mingw32/i686-w64-mingw32/lib/libglut.a
 [      87354]  ./mingw32/i686-w64-mingw32/lib/libglut32.a
-[       8058]  ./mingw32/i686-w64-mingw32/lib/libgmon.a
+[       8054]  ./mingw32/i686-w64-mingw32/lib/libgmon.a
 [      21766]  ./mingw32/i686-w64-mingw32/lib/libgpapi.a
 [      10942]  ./mingw32/i686-w64-mingw32/lib/libgpedit.a
 [      56068]  ./mingw32/i686-w64-mingw32/lib/libgpprefcl.a
@@ -193,7 +193,7 @@
 [     103822]  ./mingw32/i686-w64-mingw32/lib/libimm32.a
 [     207116]  ./mingw32/i686-w64-mingw32/lib/libiphlpapi.a
 [      57832]  ./mingw32/i686-w64-mingw32/lib/libiscsidsc.a
-[    1090306]  ./mingw32/i686-w64-mingw32/lib/libkernel32.a
+[    1090210]  ./mingw32/i686-w64-mingw32/lib/libkernel32.a
 [     180722]  ./mingw32/i686-w64-mingw32/lib/libks.a
 [     172882]  ./mingw32/i686-w64-mingw32/lib/libksguid.a
 [       6204]  ./mingw32/i686-w64-mingw32/lib/libksproxy.a
@@ -212,8 +212,8 @@
 [      76248]  ./mingw32/i686-w64-mingw32/lib/libmfuuid.a
 [       8920]  ./mingw32/i686-w64-mingw32/lib/libmgmtapi.a
 [    2579786]  ./mingw32/i686-w64-mingw32/lib/libmincore.a
-[      40454]  ./mingw32/i686-w64-mingw32/lib/libmingw32.a
-[     642750]  ./mingw32/i686-w64-mingw32/lib/libmingwex.a
+[      40446]  ./mingw32/i686-w64-mingw32/lib/libmingw32.a
+[     642724]  ./mingw32/i686-w64-mingw32/lib/libmingwex.a
 [        730]  ./mingw32/i686-w64-mingw32/lib/libmingwthrd.a
 [        712]  ./mingw32/i686-w64-mingw32/lib/libmoldname.a
 [      55284]  ./mingw32/i686-w64-mingw32/lib/libmpr.a
@@ -240,8 +240,8 @@
 [     656864]  ./mingw32/i686-w64-mingw32/lib/libmsvcr80.a
 [    1132664]  ./mingw32/i686-w64-mingw32/lib/libmsvcr90.a
 [    1187434]  ./mingw32/i686-w64-mingw32/lib/libmsvcr90d.a
-[    1003466]  ./mingw32/i686-w64-mingw32/lib/libmsvcrt-os.a
-[    1003466]  ./mingw32/i686-w64-mingw32/lib/libmsvcrt.a
+[    1003498]  ./mingw32/i686-w64-mingw32/lib/libmsvcrt-os.a
+[    1003498]  ./mingw32/i686-w64-mingw32/lib/libmsvcrt.a
 [      36386]  ./mingw32/i686-w64-mingw32/lib/libmsvfw32.a
 [      20612]  ./mingw32/i686-w64-mingw32/lib/libmswsock.a
 [      42958]  ./mingw32/i686-w64-mingw32/lib/libncrypt.a
@@ -338,7 +338,7 @@
 [     693422]  ./mingw32/i686-w64-mingw32/lib/libuser32.a
 [      35134]  ./mingw32/i686-w64-mingw32/lib/libuserenv.a
 [      35034]  ./mingw32/i686-w64-mingw32/lib/libusp10.a
-[     614812]  ./mingw32/i686-w64-mingw32/lib/libuuid.a
+[     619518]  ./mingw32/i686-w64-mingw32/lib/libuuid.a
 [      58148]  ./mingw32/i686-w64-mingw32/lib/libuxtheme.a
 [      62804]  ./mingw32/i686-w64-mingw32/lib/libvcruntime140_app.a
 [      13530]  ./mingw32/i686-w64-mingw32/lib/libvdmdbg.a

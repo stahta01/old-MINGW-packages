@@ -26,8 +26,8 @@
 [      11444]  ./mingw64/x86_64-w64-mingw32/lib/crt2u.o
 [        450]  ./mingw64/x86_64-w64-mingw32/lib/crtbegin.o
 [        450]  ./mingw64/x86_64-w64-mingw32/lib/crtend.o
-[       5421]  ./mingw64/x86_64-w64-mingw32/lib/dllcrt1.o
-[       5421]  ./mingw64/x86_64-w64-mingw32/lib/dllcrt2.o
+[       5405]  ./mingw64/x86_64-w64-mingw32/lib/dllcrt1.o
+[       5405]  ./mingw64/x86_64-w64-mingw32/lib/dllcrt2.o
 [       1635]  ./mingw64/x86_64-w64-mingw32/lib/gcrt0.o
 [       1635]  ./mingw64/x86_64-w64-mingw32/lib/gcrt1.o
 [       1635]  ./mingw64/x86_64-w64-mingw32/lib/gcrt2.o
@@ -283,7 +283,7 @@
 [       2202]  ./mingw64/x86_64-w64-mingw32/lib/libgetuname.a
 [      99228]  ./mingw64/x86_64-w64-mingw32/lib/libglmf32.a
 [      39854]  ./mingw64/x86_64-w64-mingw32/lib/libglu32.a
-[       8816]  ./mingw64/x86_64-w64-mingw32/lib/libgmon.a
+[       8832]  ./mingw64/x86_64-w64-mingw32/lib/libgmon.a
 [       8886]  ./mingw64/x86_64-w64-mingw32/lib/libgpedit.a
 [      20394]  ./mingw64/x86_64-w64-mingw32/lib/libgpkcsp.a
 [      11470]  ./mingw64/x86_64-w64-mingw32/lib/libgptext.a
@@ -375,7 +375,7 @@
 [       7360]  ./mingw64/x86_64-w64-mingw32/lib/libkd1394.a
 [       8094]  ./mingw64/x86_64-w64-mingw32/lib/libkdcom.a
 [       9004]  ./mingw64/x86_64-w64-mingw32/lib/libkerberos.a
-[    1277032]  ./mingw64/x86_64-w64-mingw32/lib/libkernel32.a
+[    1277000]  ./mingw64/x86_64-w64-mingw32/lib/libkernel32.a
 [       7466]  ./mingw64/x86_64-w64-mingw32/lib/libkeymgr.a
 [     179174]  ./mingw64/x86_64-w64-mingw32/lib/libks.a
 [     171390]  ./mingw64/x86_64-w64-mingw32/lib/libksguid.a
@@ -419,9 +419,9 @@
 [       3658]  ./mingw64/x86_64-w64-mingw32/lib/libmidimap.a
 [     195894]  ./mingw64/x86_64-w64-mingw32/lib/libmigism.a
 [       9706]  ./mingw64/x86_64-w64-mingw32/lib/libmiglibnt.a
-[    2726268]  ./mingw64/x86_64-w64-mingw32/lib/libmincore.a
+[    2726252]  ./mingw64/x86_64-w64-mingw32/lib/libmincore.a
 [      49820]  ./mingw64/x86_64-w64-mingw32/lib/libmingw32.a
-[     719100]  ./mingw64/x86_64-w64-mingw32/lib/libmingwex.a
+[     718444]  ./mingw64/x86_64-w64-mingw32/lib/libmingwex.a
 [        742]  ./mingw64/x86_64-w64-mingw32/lib/libmingwthrd.a
 [      12118]  ./mingw64/x86_64-w64-mingw32/lib/libmlang.a
 [       2958]  ./mingw64/x86_64-w64-mingw32/lib/libmll_hp.a
@@ -766,7 +766,7 @@
 [      43764]  ./mingw64/x86_64-w64-mingw32/lib/libuserenv.a
 [      34742]  ./mingw64/x86_64-w64-mingw32/lib/libusp10.a
 [      28956]  ./mingw64/x86_64-w64-mingw32/lib/libutildll.a
-[     609780]  ./mingw64/x86_64-w64-mingw32/lib/libuuid.a
+[     614486]  ./mingw64/x86_64-w64-mingw32/lib/libuuid.a
 [      63254]  ./mingw64/x86_64-w64-mingw32/lib/libuxtheme.a
 [      55630]  ./mingw64/x86_64-w64-mingw32/lib/libvcruntime140_app.a
 [     117494]  ./mingw64/x86_64-w64-mingw32/lib/libvdsutil.a
@@ -845,7 +845,7 @@
 [       5282]  ./mingw64/x86_64-w64-mingw32/lib/libwow64mib.a
 [       4200]  ./mingw64/x86_64-w64-mingw32/lib/libwow64win.a
 [       5188]  ./mingw64/x86_64-w64-mingw32/lib/libwpd_ci.a
-[     189016]  ./mingw64/x86_64-w64-mingw32/lib/libws2_32.a
+[     189000]  ./mingw64/x86_64-w64-mingw32/lib/libws2_32.a
 [      20184]  ./mingw64/x86_64-w64-mingw32/lib/libws2help.a
 [      25502]  ./mingw64/x86_64-w64-mingw32/lib/libwscapi.a
 [       2998]  ./mingw64/x86_64-w64-mingw32/lib/libwscsvc.a
