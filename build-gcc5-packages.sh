@@ -27,7 +27,7 @@ MINGW_ARCH="mingw32" makepkg-mingw -sLf --skippgpcheck && \
 _copy_data_to_repo mingw-w64-i686-gcc5 mingw-w64-i686-gcc5-libs && \
 MINGW_ARCH="mingw64" makepkg-mingw -sLf --skippgpcheck && \
 _copy_data_to_repo mingw-w64-x86_64-gcc5 mingw-w64-x86_64-gcc5-libs && \
-cd ../mingw-w64-crt6 && \
+cd ../mingw-w64-crt4 && \
 export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct -- PKGBUILD) && \
 MINGW_ARCH="mingw32" makepkg-mingw -sLf --skippgpcheck && \
 _copy_data_to_repo mingw-w64-i686-crt-git mingw-w64-i686-headers-git mingw-w64-i686-pthread-stub-headers-git && \
