@@ -30,6 +30,6 @@ _copy_data_to_repo mingw-w64-x86_64-gcc4.7 mingw-w64-x86_64-gcc4.7-libs && \
 cd ../mingw-w64-crt3 && \
 export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct -- PKGBUILD) && \
 MINGW_ARCH="mingw32" makepkg-mingw -sLf --skippgpcheck && \
-_copy_data_to_repo mingw-w64-i686-crt-git mingw-w64-i686-headers-git mingw-w64-i686-pthread-stub-headers-git && \
+_copy_data_to_repo mingw-w64-i686-crt3-git mingw-w64-i686-headers3-git mingw-w64-i686-pthread-stub-headers3-git && \
 MINGW_ARCH="mingw64" makepkg-mingw -sLf --skippgpcheck && \
-_copy_data_to_repo mingw-w64-x86_64-crt-git mingw-w64-x86_64-headers-git mingw-w64-x86_64-pthread-stub-headers-git
+_copy_data_to_repo mingw-w64-x86_64-crt3-git mingw-w64-x86_64-headers3-git mingw-w64-x86_64-pthread-stub-headers3-git
