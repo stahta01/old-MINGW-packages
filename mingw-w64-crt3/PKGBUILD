@@ -4,7 +4,7 @@
 _realname=crt
 _sourcedir=mingw-w64-git
 pkgbase=mingw-w64-${_realname}3
-pkgname=("${MINGW_PACKAGE_PREFIX}-${_realname}-git" "${MINGW_PACKAGE_PREFIX}-headers-git" "${MINGW_PACKAGE_PREFIX}-pthread-stub-headers-git")
+pkgname=("${MINGW_PACKAGE_PREFIX}-${_realname}3-git" "${MINGW_PACKAGE_PREFIX}-headers3-git" "${MINGW_PACKAGE_PREFIX}-pthread-stub-headers3-git")
 replaces=("${MINGW_PACKAGE_PREFIX}-${_realname}-svn")
 pkgver=3.4.0.3935.8c7e00886
 pkgrel=1
@@ -14,7 +14,6 @@ arch=('any')
 url='https://mingw-w64.sourceforge.io/'
 license=('custom')
 groups=("${MINGW_PACKAGE_PREFIX}-toolchain")
-depends=("${MINGW_PACKAGE_PREFIX}-headers-git")
 makedepends=("git"
              "${MINGW_PACKAGE_PREFIX}-gcc-base"
              "${MINGW_PACKAGE_PREFIX}-binutils")
@@ -125,21 +124,21 @@ package_headers() {
   install -Dm644 ${srcdir}/${_sourcedir}/mingw-w64-headers/direct-x/readme.txt ${pkgdir}${MINGW_PREFIX}/share/licenses/${_realname}/direct-x-readme.txt
 }
 
-package_mingw-w64-i686-crt-git() {
+package_mingw-w64-i686-crt3-git() {
   package_crt
 }
-package_mingw-w64-i686-headers-git() {
+package_mingw-w64-i686-headers3-git() {
   package_headers
 }
-package_mingw-w64-i686-pthread-stub-headers-git() {
+package_mingw-w64-i686-pthread-stub-headers3-git() {
   package_pthread_stub_headers
 }
-package_mingw-w64-x86_64-crt-git() {
+package_mingw-w64-x86_64-crt3-git() {
   package_crt
 }
-package_mingw-w64-x86_64-headers-git() {
+package_mingw-w64-x86_64-headers3-git() {
   package_headers
 }
-package_mingw-w64-x86_64-pthread-stub-headers-git() {
+package_mingw-w64-x86_64-pthread-stub-headers3-git() {
   package_pthread_stub_headers
 }
