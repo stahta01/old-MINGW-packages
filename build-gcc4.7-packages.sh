@@ -23,6 +23,7 @@ _copy_data_to_repo() {
 
 ./install-build-prerequisites.sh && \
 cd mingw-w64-gcc4.7 && \
+export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct -- PKGBUILD) && \
 MINGW_ARCH="mingw32" makepkg-mingw -sLf && \
 _copy_data_to_repo mingw-w64-i686-gcc4.7 mingw-w64-i686-gcc4.7-libs
 MINGW_ARCH="mingw64" makepkg-mingw -sLf && \
