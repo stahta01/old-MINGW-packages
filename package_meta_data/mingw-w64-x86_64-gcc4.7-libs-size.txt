@@ -1,0 +1,15 @@
+.
+[          0]  ./mingw64
+[          0]  ./mingw64/bin
+[      91882]  ./mingw64/bin/libgcc_s_sjlj-1.dll
+[     337073]  ./mingw64/bin/libquadmath-0.dll
+[      21497]  ./mingw64/bin/libssp-0.dll
+[          0]  ./mingw64/share
+[          0]  ./mingw64/share/licenses
+[          0]  ./mingw64/share/licenses/gcc-libs
+[      26527]  ./mingw64/share/licenses/gcc-libs/COPYING.LIB
+[       3324]  ./mingw64/share/licenses/gcc-libs/COPYING.RUNTIME
+[      35147]  ./mingw64/share/licenses/gcc-libs/COPYING3
+[        227]  ./mingw64/share/licenses/gcc-libs/README
+
+5 directories, 7 files
