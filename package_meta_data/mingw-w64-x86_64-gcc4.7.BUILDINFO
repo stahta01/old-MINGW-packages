@@ -1,11 +1,11 @@
 format = 2
 pkgname = mingw-w64-x86_64-gcc4.7
 pkgbase = mingw-w64-gcc4.7
-pkgver = 4.7.4-1
+pkgver = 4.7.4-2
 pkgarch = any
-pkgbuild_sha256sum = 38d62651a0a38f99547ecacd1102426bab2eb850342a3c7f8dac02c5cd269c5b
+pkgbuild_sha256sum = ffbd84a349dea661073e359b8e3d5c6ba464e9ed8def1dfa17ac05caed3a410e
 packager = Unknown Packager
-builddate = 1637336996
+builddate = 1637486301
 builddir = /c/Users/stahta01/devel/PKGBUILDs/old-MINGW-packages/mingw-w64-gcc4.7
 startdir = /c/Users/stahta01/devel/PKGBUILDs/old-MINGW-packages/mingw-w64-gcc4.7
 buildtool = makepkg
