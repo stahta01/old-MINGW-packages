@@ -22,15 +22,21 @@ _copy_data_to_repo() {
 }
 
 ./install-build-prerequisites.sh && \
-cd mingw-w64-gcc4.7 && \
+cd mingw-w64-crt3 && \
 export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct -- PKGBUILD) && \
-MINGW_ARCH="mingw32" makepkg-mingw -sLf && \
+MINGW_ARCH="mingw32" makepkg-mingw -sLf --install --noconfirm && \
+_copy_data_to_repo mingw-w64-i686-crt3-git mingw-w64-i686-headers3-git mingw-w64-i686-pthread-stub-headers3-git && \
+MINGW_ARCH="mingw64" makepkg-mingw -sLf --install --noconfirm && \
+_copy_data_to_repo mingw-w64-x86_64-crt3-git mingw-w64-x86_64-headers3-git mingw-w64-x86_64-pthread-stub-headers3-git
+cd ../mingw-w64-gcc4.7 && \
+export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct -- PKGBUILD) && \
+MINGW_ARCH="mingw32" makepkg-mingw -sLf --install --noconfirm && \
 _copy_data_to_repo mingw-w64-i686-gcc4.7 mingw-w64-i686-gcc4.7-libs
-MINGW_ARCH="mingw64" makepkg-mingw -sLf && \
+MINGW_ARCH="mingw64" makepkg-mingw -sLf --install --noconfirm && \
 _copy_data_to_repo mingw-w64-x86_64-gcc4.7 mingw-w64-x86_64-gcc4.7-libs && \
 cd ../mingw-w64-crt3 && \
 export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct -- PKGBUILD) && \
-MINGW_ARCH="mingw32" makepkg-mingw -sLf --skippgpcheck && \
+MINGW_ARCH="mingw32" makepkg-mingw -sLf --install --noconfirm && \
 _copy_data_to_repo mingw-w64-i686-crt3-git mingw-w64-i686-headers3-git mingw-w64-i686-pthread-stub-headers3-git && \
-MINGW_ARCH="mingw64" makepkg-mingw -sLf --skippgpcheck && \
+MINGW_ARCH="mingw64" makepkg-mingw -sLf --install --noconfirm && \
 _copy_data_to_repo mingw-w64-x86_64-crt3-git mingw-w64-x86_64-headers3-git mingw-w64-x86_64-pthread-stub-headers3-git
