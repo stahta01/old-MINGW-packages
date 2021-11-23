@@ -7,7 +7,7 @@ pkgbase=mingw-w64-${_realname}3
 pkgname=("${MINGW_PACKAGE_PREFIX}-${_realname}3-git" "${MINGW_PACKAGE_PREFIX}-headers3-git" "${MINGW_PACKAGE_PREFIX}-pthread-stub-headers3-git")
 replaces=("${MINGW_PACKAGE_PREFIX}-${_realname}-svn")
 pkgver=3.4.0.3935.8c7e00886
-pkgrel=2
+pkgrel=3
 _commit='8c7e00886f69c448270376601fe1c016392e26f9'
 pkgdesc='MinGW-w64 CRT for Windows'
 arch=('any')
@@ -17,8 +17,6 @@ groups=("${MINGW_PACKAGE_PREFIX}-toolchain")
 makedepends=("git"
              "${MINGW_PACKAGE_PREFIX}-gcc-base"
              "${MINGW_PACKAGE_PREFIX}-binutils")
-provides=("${MINGW_PACKAGE_PREFIX}-${_realname}")
-conflicts=("${MINGW_PACKAGE_PREFIX}-${_realname}")
 options=('!strip' 'staticlibs' '!buildflags' '!emptydirs')
 source=("${_sourcedir}"::"git+https://git.code.sf.net/p/mingw-w64/mingw-w64#commit=$_commit"
         '001-headers-Use-FORCEINLINE-instead-of-__CRT_INLINE.patch')
@@ -87,6 +85,10 @@ build() {
 }
 
 package_crt() {
+  pkgdesc='MinGW-w64 CRT for Windows'
+  provides=("${MINGW_PACKAGE_PREFIX}-${_realname}")
+  conflicts=("${MINGW_PACKAGE_PREFIX}-${_realname}")
+
   msg "Installing ${MINGW_CHOST} crt"
   cd ${srcdir}/crt-${MINGW_CHOST}
   make DESTDIR=${pkgdir} install-strip
