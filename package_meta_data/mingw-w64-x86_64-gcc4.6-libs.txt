@@ -1,0 +1,8 @@
+.
+./mingw64
+./mingw64/bin
+./mingw64/bin/libgcc_s_sjlj-1.dll
+./mingw64/bin/libssp-0.dll
+./mingw64/bin/libstdc++-6.dll
+
+2 directories, 3 files
