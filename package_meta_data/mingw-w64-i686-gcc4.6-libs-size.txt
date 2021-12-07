@@ -1,0 +1,8 @@
+.
+[          0]  ./mingw32
+[          0]  ./mingw32/bin
+[      93972]  ./mingw32/bin/libgcc_s_sjlj-1.dll
+[      15404]  ./mingw32/bin/libssp-0.dll
+[     821762]  ./mingw32/bin/libstdc++-6.dll
+
+2 directories, 3 files
