@@ -616,26 +616,26 @@ package_mingw-w64-i686-gcc4.6-objc() {
 }
 
 # 64-bit wrappers
-package_opt-mingw-x86_64-gcc4.6-libs() {
+package_mingw-w64-x86_64-gcc4.6-libs() {
   package_opt-mingw-gcc-libs
 }
 
-package_opt-mingw-x86_64-gcc4.6() {
+package_mingw-w64-x86_64-gcc4.6() {
   package_opt-mingw-gcc
 }
 
-package_opt-mingw-x86_64-gcc4.6-libgfortran() {
+package_mingw-w64-x86_64-gcc4.6-libgfortran() {
   package_opt-mingw-gcc-libgfortran
 }
 
-package_opt-mingw-x86_64-gcc4.6-fortran() {
+package_mingw-w64-x86_64-gcc4.6-fortran() {
   package_opt-mingw-gcc-fortran
 }
 
-package_opt-mingw-x86_64-gcc4.6-ada() {
+package_mingw-w64-x86_64-gcc4.6-ada() {
   package_opt-mingw-gcc-ada
 }
 
-package_opt-mingw-x86_64-gcc4.6-objc() {
+package_mingw-w64-x86_64-gcc4.6-objc() {
   package_opt-mingw-gcc-objc
 }
