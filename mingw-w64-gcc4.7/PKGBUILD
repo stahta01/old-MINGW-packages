@@ -9,7 +9,7 @@
 _enable_ada=no
 _enable_objc=no
 _enable_jit=no
-_enable_cxx=no
+_enable_cxx=yes
 _enable_fortran=no          # Use no to speedup development
 
 _enable_3_stages=no         # Use no to speedup development
@@ -31,7 +31,7 @@ pkgname=("${MINGW_PACKAGE_PREFIX}-${_realname}${_gccnumber}"
         )
 pkgver=4.7.4
 _sourcedir=${_realname}-${pkgver}
-pkgrel=3
+pkgrel=4
 pkgdesc="GCC for the MinGW-w64"
 arch=('any')
 mingw_arch=('mingw32' 'mingw64')
