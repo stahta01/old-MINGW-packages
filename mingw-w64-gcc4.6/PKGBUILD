@@ -39,8 +39,8 @@ pkgname=("${MINGW_PACKAGE_PREFIX}-${_realname}"
          $([[ "$_enable_ada" == "yes" ]] && echo "${MINGW_PACKAGE_PREFIX}-${_realname}-ada")
          $([[ "$_enable_objc" == "yes" ]] && echo "${MINGW_PACKAGE_PREFIX}-${_realname}-objc")
         )
-pkgver=${_base_pkg_version}.3
-pkgrel=7
+pkgver=${_base_pkg_version}.4
+pkgrel=1
 pkgdesc="GCC ${_base_pkg_version} for the MinGW-w64"
 arch=('any')
 mingw_arch=('mingw32' 'mingw64')
@@ -86,7 +86,7 @@ source=("https://ftp.gnu.org/gnu/gcc/${_basename}-${pkgver}/${_sourcedir}.tar.bz
         804-gcc-4.6.4-Fix-texi-docs-syntax-errors.patch
         822-gcc-4.6.0-SVN-196198-PR-bootstrap-56258-fix-texi-docs.patch
         823-gcc-4.6.0-SVN-196820-PR-bootstrap-56258-fix-texi-docs.patch)
-sha256sums=('SKIP'
+sha256sums=('35af16afa0b67af9b8eb15cafb76d2bc5f568540552522f5dc2c88dd45d977e8'
             'c7e75a08a8d49d2082e4caee1591a05d11b9d5627514e678f02d66a124bcf2ba'
             '936162c0312886c21581002b79932829aa048cfaf9937c6265aeaa14f1cd1775'
             'e664603757251fd8a352848276497a4c79b7f8b21fd8aedd5cc0598a38fee3e4'
