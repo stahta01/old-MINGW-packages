@@ -692,7 +692,7 @@
 [       9706]  ./mingw64/x86_64-w64-mingw32/lib/libmiglibnt.a
 [       4508]  ./mingw64/x86_64-w64-mingw32/lib/libmimefilt.a
 [      38186]  ./mingw64/x86_64-w64-mingw32/lib/libmingw32.a
-[     628946]  ./mingw64/x86_64-w64-mingw32/lib/libmingwex.a
+[     628922]  ./mingw64/x86_64-w64-mingw32/lib/libmingwex.a
 [        580]  ./mingw64/x86_64-w64-mingw32/lib/libmingwthrd.a
 [      12118]  ./mingw64/x86_64-w64-mingw32/lib/libmlang.a
 [       2958]  ./mingw64/x86_64-w64-mingw32/lib/libmll_hp.a
