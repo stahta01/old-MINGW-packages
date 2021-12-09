@@ -311,7 +311,7 @@ build() {
     --disable-symvers \
     --with-libiconv=$MINGW_PREFIX \
     --with-zlib=$MINGW_PREFIX \
-    --with-pkgversion="Rev${pkgrel}, Built by TimS old-MINGW-packages project" \
+    --with-pkgversion="Rev${pkgrel} static, Built by TimS old-MINGW-packages project" \
     --with-bugurl="https://github.com/stahta01/old-MINGW-packages/issues" \
     --with-gnu-as --with-gnu-ld \
     "${configure_opts[@]}"
