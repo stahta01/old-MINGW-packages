@@ -25,6 +25,6 @@ _copy_data_to_repo() {
 cd mingw-w64-gcc4.6-static && \
 export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct -- PKGBUILD) && \
 MINGW_ARCH="mingw32" makepkg-mingw -Lf --install --noconfirm && \
-_copy_data_to_repo mingw-w64-i686-gcc4.6 mingw-w64-i686-gcc4.6-libs && \
+_copy_data_to_repo mingw-w64-i686-gcc4.6-static mingw-w64-i686-gcc4.6 mingw-w64-i686-gcc4.6-libs && \
 MINGW_ARCH="mingw64" makepkg-mingw -Lf --install --noconfirm && \
-_copy_data_to_repo mingw-w64-x86_64-gcc4.6 mingw-w64-x86_64-gcc4.6-libs
+_copy_data_to_repo mingw-w64-x86_64-gcc4.6-static mingw-w64-x86_64-gcc4.6 mingw-w64-x86_64-gcc4.6-libs
