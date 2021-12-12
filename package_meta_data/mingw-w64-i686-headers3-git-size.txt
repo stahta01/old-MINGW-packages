@@ -80,7 +80,7 @@
 [        558]  ./mingw32/i686-w64-mingw32/include/atacct.h
 [       3070]  ./mingw32/i686-w64-mingw32/include/atalkwsh.h
 [        969]  ./mingw32/i686-w64-mingw32/include/atsmedia.h
-[        854]  ./mingw32/i686-w64-mingw32/include/audevcod.h
+[       1478]  ./mingw32/i686-w64-mingw32/include/audevcod.h
 [        782]  ./mingw32/i686-w64-mingw32/include/audioapotypes.h
 [      65382]  ./mingw32/i686-w64-mingw32/include/audioclient.h
 [       9568]  ./mingw32/i686-w64-mingw32/include/audioclient.idl
